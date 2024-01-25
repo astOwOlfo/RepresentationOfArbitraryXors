@@ -37,6 +37,7 @@ Example sentences: "Alice: The city of Cuiaba is in Brazil.", "Bob: The city of 
 Dataset from the geometry of truth [paper](https://arxiv.org/abs/2310.06824). [repo](https://github.com/saprmarks/geometry-of-truth).
 
 Example sentences: "Alice: Sixty-nine is larger than sixty-five.", "Bob: Eighty-four is smaller than sixty-two.".
+
 Note that in this dataset, the `not` label is true if the sentence contains the word "smaller", not the word "not".
 
 ![image](plot_larger_than.png)
