@@ -27,6 +27,7 @@ An explanation one could imagine for this is that the model has a direction whic
 ### Cities Dataset for Geometry of Truth
 
 Dataset from the geometry of truth [paper](https://arxiv.org/abs/2310.06824). [repo](https://github.com/saprmarks/geometry-of-truth).
+
 Example sentences: "Alice: The city of Cuiaba is in Brazil.", "Bob: The city of Cuiaba is not in Latvia.".
 
 ![image](plot_cities.png)
@@ -34,10 +35,19 @@ Example sentences: "Alice: The city of Cuiaba is in Brazil.", "Bob: The city of 
 ### Larger Than Dataset from Geometry of Truth
 
 Dataset from the geometry of truth [paper](https://arxiv.org/abs/2310.06824). [repo](https://github.com/saprmarks/geometry-of-truth).
+
 Example sentences: "Alice: Sixty-nine is larger than sixty-five.", "Bob: Eighty-four is smaller than sixty-two.".
 Note that in this dataset, the `not` label is true if the sentence contains the word "smaller", not the word "not".
 
-![image(plot_larger_than.png)
+![image](plot_larger_than.png)
+
+### Things Dataset
+
+This is a (somewhat dirty) dataset we synthesized.
+
+Example sentences: "Alice: Pine trees are cone-bearing trees.", "Bob: Cupcakes are not earthquakes."
+
+![image](plot_things.png)
 
 ### Technical Details
 
@@ -45,13 +55,6 @@ The probe is trained on the activations of the last token of the sentence, which
 
 We prepend the beginning of sequence token to the sentences when collecting the activations.
 A person who tried to reproduce our work didn't prepend it and got significantly different results (~~and it took us a couple hours to figure out why we were getting differen tresults~~).
-
-### Things Dataset
-
-This is a (somewhat dirty) dataset we synthesized.
-Example sentences: "Alice: Pine trees are cone-bearing trees.", "Bob: Cupcakes are not earthquakes."
-
-![image](plot_things.png)
 
 ## Toy Model on Toy Arithmetic Task
 
