@@ -22,7 +22,7 @@ We search probes for the labels `alice` - the person speaking is Alice, `not` - 
 
 We consistently observe a greater accuracy for probing the label `not_xor_correct` than the label `correct`.
 We argue that this is a reasonable finding and that it means the label `not_xor_correct` should be seen as a primitive label and the label `correct` should be seen as the xor of the labels `not_xor_correct` and `not`.
-An explanation one could imagine for this is that the model has a direction which represents whether the subject and object of the sentence are related (this is the `not_xor_correct` direction), and whether the sentence is correct is computed later as the xor of this direction with the direction of whether the `not` direction`
+An explanation one could imagine for this is that the model has a direction which represents whether the subject and object of the sentence are related (this is the `not_xor_correct` direction), and whether the sentence is correct is computed later as the xor of this direction with the `not` direction.
 
 ### Cities Dataset for Geometry of Truth
 
